@@ -1,0 +1,309 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Kevin}{Lyons}{
+  \href{mailto:kevin.lyons.physics@gmail.com}{kevin.lyons.physics@gmail.com} | H: 518.280.1772 | M: 617.501.2227\\
+  LinkedIn: \href{https://www.linkedin.com/in/kevin-lyons-mlds}{kevin-lyons-mlds} | Github: \href{https://github.com/KMLDS}{KMLDS}
+}
+% { \urlstyle{same}\href{http://debarghyadas.com}{debarghyadas.com}| \href{http://fb.co/dd}{fb.co/dd}\\
+%\href{mailto:deedy@fb.com}{deedy@fb.com} | 607.379.5733 | \href{mailto:dd367@cornell.edu}{dd367@cornell.edu}
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Rochester}
+\descript{PhD in Physics}
+\location{Anticipated, currently ABD}
+\location{Spring 2017 | Rochester, NY}
+\descript{MS in Physics}
+\location{Spring 2014 | Rochester, NY}
+\sectionsep
+
+\subsection{Stony Brook University}
+\descript{BS in Physics}
+\descript{BS in Astronomy}
+\location{Spring 2008 | Stony Brook, NY}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Links} 
+% Facebook:// \href{https://facebook/dd}{\bf dd} \\
+% Github:// \href{https://github.com/deedydas}{\bf deedydas} \\
+% LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
+% YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+% Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
+% Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     COURSEWORK
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+% \subsection{Graduate}
+% Advanced Machine Learning \\
+% Open Source Software Engineering \\
+% Advanced Interactive Graphics \\
+% Compilers + Practicum \\
+% Cloud Computing \\
+% Evolutionary Computation \\
+% Defending Computer Networks \\
+% Machine Learning \\
+% \sectionsep
+
+% \subsection{Undergraduate}
+% Information Retrieval \\
+% Operating Systems \\
+% Artificial Intelligence + Practicum \\
+% Functional Programming \\
+% Computer Graphics + Practicum \\
+% {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+% Unix Tools and Scripting \\
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     SKILLS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ \section{Skills}
+ \subsection{Programming}
+ Python \textbullet{} Mathematica \textbullet{} R \textbullet{} SQL \\
+ \descript{Previously used:}
+ C++ \textbullet{} Haskell \textbullet{} Matlab \textbullet{} IDL \\
+ Web development (mostly Flask)
+\descript{Related tools:}
+Python scientific stack \textbullet{} Git \\
+Linux \textbullet{} Regular expressions
+\sectionsep
+
+\subsection{Theory}
+\descript{Machine Learning:}
+Model selection \textbullet{} Regularization \\
+Dimensionality reduction  \\
+Various classification, regression, \\
+and clustering algorithms
+
+\descript{Related theory:}
+Probability \textbullet{} Statistics \textbullet{} Calculus \\
+Linear algebra
+
+ % \location{Over 5000 lines:}
+% Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
+% OCaml \textbullet{} Matlab \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
+% \location{Over 1000 lines:}
+% C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+% \location{Familiar:}
+% AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+% \sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{University of Rochester}
+\descript{| Research Assistant }
+\location{2012 - Present | Rochester, NY}
+\vspace{\topsep}
+\begin{tightemize}
+\item Published four journal articles in quantum parameter estimation, with a strong emphasis on probability and statistics in theoretical physics.
+\item Successfully aided experimental collaborators with difficult problems in situations where results were required very quickly, including
+  \begin{itemize}
+  \item Proving a quantum cryptography scheme was secure (with high probability) against eavesdropping attacks.
+  \item Diagnosing a subtle problem where experimental data was not repeatable or consistent with models.
+  \end{itemize}
+  
+\end{tightemize}
+\sectionsep
+\runsubsection{RTI International}
+\descript{| Independent Contractor}
+\location{2012 - 2016 | Research Triangle Park, NC}
+\begin{tightemize}
+\item Performed an intensive technical and financial analysis to aid in the development of a medical physics invention.
+  \begin{itemize}
+  \item Needed to quickly learn new concepts in nuclear physics, engineering, and finance.
+  \item Successfully optimized the device and helped verify technical performance with simulations in C++.
+  \item Also verified the device could be created an operated competitively using net present value and levelized cost analysis.
+  \end{itemize}
+\item Prepared documents and presentations for large funding proposals (\emph{e.g.}~for venture capital).
+\end{tightemize}
+\sectionsep
+
+\textbf{Note:} All work for the past 5 years has been on a full-time telecommuting basis as part of distributed teams.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+\descript{\href{https://github.com/KMLDS/Bender}{Predicting NFL player statistics}}
+\begin{tightemize} 
+\item Created an application to predict fantasy football scores of current NFL players given a \href{https://github.com/BurntSushi/nfldb}{large Postgres database} of past statistics.
+\item Large, nontrivial SQL queries were needed to take the data from its raw form to a useful state.
+  \begin{itemize}
+    \item Query speeds were greatly increased using materialized views and window functions.
+  \end{itemize}
+\item Optimized with respect to a number of algorithms on players of each position, including $k$-nearest neighbors, ridge regression, support vector regression, and feedforward neural networks.
+\item Current results compared against anecdotal evidence available online suggest the model can outperform average human fantasy football players, and likely even have a positive expected return on fantasy football bets.
+  \begin{itemize}
+  \item Performance measures of predicted lineups will be made concrete by scraping data from available fantasy football contests to determine the actual distribution of scores.
+  \end{itemize}
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Skills}
+% \vspace{\topsep}
+% \begin{tightemize}
+% \item \textbf{Programming languages:} Python, Mathematica, R
+%   \begin{itemize}
+%   \item Previously used: C++, Haskell, Matlab, PHP, and IDL
+%   \end{itemize}
+%   \textbf{Databases:} SQL, PostgreSQL
+% \item \textbf{Machine learning:} Both theory and practice
+%   \begin{itemize}
+%   \item Algorithms including linear regression, logistic regression, linear and quadratic discriminant analysis, $k$-nearest neighbors, local regression and splines, support vector machines, neural networks, and $K$-means clustering
+%   \item Supporting techniques including regularization, model selection (\emph{e.g.~}forward and backward subset selection), dimensionality reduction (\emph{e.g.~}principal component analysis)
+%   \item ML and related libraries including scikit-learn, pandas, NumPy, and SciPy in Python, caret and other specialized libraries in R.
+%   \end{itemize}
+% \item \textbf{Workflow:} Git, Linux, Windows, 5 years of telecommuting experience, capable of reading highly mathematical and technical journal articles and texts 
+% \end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Research}
+% \runsubsection{Cornell Robot Learning Lab}
+% \descript{| Researcher}
+% \location{Jan 2014 – Jan 2015 | Ithaca, NY}
+% Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+% \sectionsep
+
+% \runsubsection{Cornell Phonetics Lab}
+% \descript{| Head Undergraduate Researcher}
+% \location{Mar 2012 – May 2013 | Ithaca, NY}
+% Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2014	     & top 52/2500  & KPCB Engineering Fellow\\
+% 2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+% 2013	     & National  & Jump Trading Challenge Finalist\\
+% 2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+% 2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+% 2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+% \end{tabular}
+% \sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     PUBLICATIONS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-engine: xetex
+%%% TeX-master: t
+%%% End:
