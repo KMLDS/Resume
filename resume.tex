@@ -149,14 +149,14 @@
  C++ \textbullet{} Haskell \textbullet{} Matlab \textbullet{} IDL \\
  Web development (mostly Flask)
 \descript{Related tools:}
-Python scientific stack \textbullet{} Git \\
+Python scientific stack \textbullet{} Spark  \textbullet{} Git \\
 Linux \textbullet{} Regular expressions
 \sectionsep
 
 \subsection{Theory}
 \descript{Machine Learning:}
 Model selection \textbullet{} Regularization \\
-Dimensionality reduction  \\
+Dimensionality reduction \textbullet{} NLP  \\
 Various classification, regression, \\
 and clustering algorithms
 
@@ -222,13 +222,15 @@ Linear algebra
 % PROJECTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Projects}
+\descript{\href{https://github.com/KMLDS/Xmpanzee}{Finding interesting arXiv articles (Current)}}
+\begin{tightemize}
+\item Built a Scala application to scrape metadata from all 1.3 million articles on arXiv and processed with Spark SQL.
+\item Currently investigating different deep learning models capable of providing recommendations of useful machine learning papers.
+\end{tightemize}
 \descript{\href{https://github.com/KMLDS/Bender}{Predicting NFL player statistics}}
 \begin{tightemize} 
 \item Created an application to predict fantasy football scores of current NFL players given a \href{https://github.com/BurntSushi/nfldb}{large Postgres database} of past statistics.
-\item Large, nontrivial SQL queries were needed to take the data from its raw form to a useful state.
-  \begin{itemize}
-    \item Query speeds were greatly increased using materialized views and window functions.
-  \end{itemize}
+\item SQL queries optimized with window functions and materialized views were used to take the data from its raw form to a useful state.
 \item Optimized with respect to a number of algorithms on players of each position, including $k$-nearest neighbors, ridge regression, support vector regression, tree-based methods, and feedforward neural networks.
 \item Current results compared against anecdotal evidence available online suggest the model can outperform average human fantasy football players, and likely even have a positive expected return on fantasy football bets.
   \begin{itemize}
